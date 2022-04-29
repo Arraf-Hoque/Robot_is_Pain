@@ -1,6 +1,5 @@
 #include "main.h"
-#include "pros/misc.h"
-#include "pros/rtos.hpp"
+#include "autons.hpp"
 
 /////
 // For instalattion, upgrading, documentations and tutorials, check out website!
@@ -175,7 +174,7 @@ void initialize() {
 
   // Autonomous Selector using LLEMU
   ez::as::auton_selector.add_autons({
-    Auton("Use This Auton", right_side_auton()),
+    Auton("Use this lmao", right_side_auton),
     Auton("Example Drive\n\nDrive forward and come back.", drive_example),
     Auton("Example Turn\n\nTurn 3 times.", turn_example),
     Auton("Drive and Turn\n\nDrive forward, turn, come back. ", drive_and_turn),
@@ -234,7 +233,7 @@ void autonomous() {
   chassis.reset_gyro(); // Reset gyro position to 0
   chassis.reset_drive_sensor(); // Reset drive sensors to 0
   chassis.set_drive_brake(MOTOR_BRAKE_HOLD); // Set motors to hold.  This helps autonomous consistency.
-
+  right_side_auton();
   ez::as::auton_selector.call_selected_auton(); // Calls selected auton from autonomous selector.
 }
 
