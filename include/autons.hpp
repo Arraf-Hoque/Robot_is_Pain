@@ -1,7 +1,7 @@
 #pragma once
 
 #include "EZ-Template/drive/drive.hpp"
-#include "C:\Users\skyga\Documents\Robot Garbage but again\src\autons.cpp"
+#include "C:/Users/skyga/Documents/Robot Garbage but again/src/autons.cpp"
 
 extern Drive chassis;
 
