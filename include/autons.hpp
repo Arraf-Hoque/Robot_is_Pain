@@ -1,5 +1,5 @@
 #pragma once
-
+#include "main.h"
 #include "EZ-Template/drive/drive.hpp"
 #include "C:/Users/skyga/Documents/Robot Garbage but again/src/autons.cpp"
 
